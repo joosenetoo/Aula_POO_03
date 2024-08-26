@@ -28,9 +28,22 @@ public class Main {
         ReutilizarConst recarro3 = new ReutilizarConst("Fusca", 2022, "Branco");
         recarro3.displayInfo();
 
+        // Usando o construtor padrão
+        Book book1 = new Book();
+        book1.displayInfo();
 
+        // Usando o construtor com título e autor
+        Book book2 = new Book("1984", "George Orwell");
+        book2.setYear(1949);
+        book2.displayInfo();
 
+        // Usando o construtor completo
+        Book book3 = new Book("O Senhor dos Anéis", "J.R.R. Tolkien", 1954, "Allen & Unwin");
+        book3.displayInfo();
 
+        // Testando os modificadores de acesso
+        book3.setTitle("O Hobbit");
+        System.out.println("Novo título do book3: " + book3.getTitle());
 
     }
 }
