@@ -1,24 +1,20 @@
-class Carr {
+class ReutilizarConst {
     String model;
     int year;
     String color;
 
     // Construtor 1: Sem parâmetros (valores padrão)
-    Carr() {
-        this.model = "Unknown Model";
-        this.year = 2020;
-        this.color = "White";
+    ReutilizarConst() {
+        this("Unknown Model", 2020, "White"); // Chamando o construtor 3 com valores padrão
     }
 
     // Construtor 2: Com dois parâmetros
-    Carr(String model, int year) {
-        this.model = model;
-        this.year = year;
-        this.color = "White"; // Cor padrão
+    ReutilizarConst(String model, int year) {
+        this(model, year, "White"); // Chamando o construtor 3 e definindo a cor padrão como "White"
     }
 
     // Construtor 3: Com três parâmetros
-    Carr(String model, int year, String color) {
+    ReutilizarConst(String model, int year, String color) {
         this.model = model;
         this.year = year;
         this.color = color;

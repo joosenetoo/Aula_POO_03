@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+class Car {
+    String model;
+    int year;
 
-public class Car {
+    // Construtor parametrizado
+    Car(String model, int year) {
+        this.model = model;
+        this.year = year;
+    }
+
+    // Construtor padrão
+    Car() {
+        model = "Desconhecido";
+        year = 2000;
+    }
 }
