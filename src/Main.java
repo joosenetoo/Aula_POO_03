@@ -28,6 +28,9 @@ public class Main {
         ReutilizarConst recarro3 = new ReutilizarConst("Fusca", 2022, "Branco");
         recarro3.displayInfo();
 
+
+
+
         // Usando o construtor padrão
         Book book1 = new Book();
         book1.displayInfo();
@@ -42,7 +45,7 @@ public class Main {
         book3.displayInfo();
 
         // Testando os modificadores de acesso
-        book3.setTitle("O Hobbit");
+        book3.setTitle("");
         System.out.println("Novo título do book3: " + book3.getTitle());
 
     }
